@@ -33,7 +33,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 	- Add remaining 3 values for total
 - [ ] Find the lowest roll in the DOM
 	- [ ] use `indexToDrop` to target `li`
-- [ ] Update the DOM to show `roll-total` 
+- [x] Update the DOM to show `roll-total` 
 	- target `#attrTotal`
 	- append `total`
 - [ ] Add functionality for `roll-all-stats` button
