@@ -15,7 +15,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 
 ## 🚧 Roadmap
 
-#### Layout & Styling
+### Layout & Styling
 - [x] Build out basic layout for attributes
 - [x] Apply CSS reset
 - [x] Utilize flexbox to make working with data a decent experience
@@ -27,7 +27,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [ ] Refactor layout to be mobile-first
 
 
-#### Functionality
+### Functionality
 - [x] Create 6-sided dice roll
 - [x] Select attribute buttons in the DOM
 - [x] Select all attribute lists in the DOM
