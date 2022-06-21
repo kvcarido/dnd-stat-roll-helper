@@ -120,6 +120,7 @@ body {
   align-items: center;
 }
 
-/* style me */
 .dropped-roll {
+  color: maroon;
+  text-decoration: line-through;
 }
