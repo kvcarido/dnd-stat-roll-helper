@@ -1,0 +1,88 @@
+/*************/
+/* variables */
+/*************/
+
+:root {
+    --spacer: 1rem;
+}
+
+/****************/
+/* an AOK reset */
+/****************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+fieldset {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+ol[class],
+ul[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/*******************/
+/* utility classes */
+/*******************/
+
+.flow-content > * + * {
+  margin-top: var(--spacer);
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/**********/
+/* styles */
+/**********/
+
+#roll {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
