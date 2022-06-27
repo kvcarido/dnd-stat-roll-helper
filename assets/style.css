@@ -83,6 +83,16 @@ body {
 /**********/
 
 #roll {
-    border: 1px solid black;
-    padding: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.stat-roll {
+  border: 1px solid grey;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.stat-header {
+  align-items: center;
 }

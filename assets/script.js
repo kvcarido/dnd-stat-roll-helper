@@ -1,5 +1,6 @@
 const rollBtn = document.querySelector('#roll')
 const strRolls = document.querySelectorAll('.strRoll')
+const strBtn = document.querySelector('#strengthBtn')
 
 const rollDice = () => {
     return Math.ceil(Math.random() * 6)
@@ -13,7 +14,7 @@ const rollStrength = () => {
     test.forEach((el, i) => {
         el.append(rollDice())
     })
-
+    strBtn.setAttribute('disabled', '')
 }
 
-rollStrength()
+strBtn.addEventListener('click', rollStrength)
