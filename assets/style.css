@@ -70,12 +70,28 @@ body {
 
 .container {
   padding: 0 var(--spacer);
-  max-width: 50rem;
+  max-width: 45rem;
   margin: 0 auto;
 }
 
 .flex {
   display: flex;
+}
+
+/**********/
+/* layout */
+/**********/
+#stats {
+  border: 2px grey solid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.stat {
+  border: 1px grey dashed;
+  min-width: 20rem;
+  padding: 0.5rem;
 }
 
 /**********/
@@ -91,6 +107,7 @@ body {
   border: 1px solid grey;
   padding: 0.25rem;
   border-radius: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .stat-header {

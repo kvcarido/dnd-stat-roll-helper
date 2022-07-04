@@ -9,77 +9,108 @@
 </head>
 <body>
     <div class="container flow-content">
-        <h1>Stat Roll Helper</h1>
-        <div id="description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga unde sunt qui cumque nam quibusdam nostrum incidunt ipsam, iure id quo saepe odit aliquam molestiae vitae, vel nihil magni.
-            Veniam culpa repudiandae necessitatibus in sapiente laudantium provident consequatur error eum, fugiat voluptatibus a nobis voluptates qui cumque explicabo at suscipit temporibus. Ut placeat alias voluptatem quas beatae deserunt officia?
+        <header class="flow-content">
+            <h1>Stat Roll Helper</h1>
+            <div id="description" class="flow-content">
+                <p>
+                    Okay so, the crazy thing is I don't even play DnD. However, a lot of my close friends and family do play, and every once in a while I'll be interested enough to spectate a campaign session.
+                </p>
+                <p>
+                    Although I barely know anything about the world of DnD, I do know that at the beginning of a campaign you must roll a 6-sided die 🎲 to determine certain attributes for your character. This side project serves as a personal quest for learning in public, a fun and productive way to apply my knowledge of front-end technologies into a tool that can be useful for DnD enthusiasts who can't be bothered with the repetitious act of rolling for stats. Unless you're into that process, then don't let me stop you!
+                </p>
+            </div>
+            <button id="roll">Roll All Stats</button>
+        </header>
 
-            <button id="roll">Roll</button>
-        </div>
-
-        <div id="stats" class="flow-content">
-            <div class="stat">
+        <div id="stats" class="flex flow-content">
+            <!-- strength -->
+            <div class="stat" id="stat-str">
                 <div class="stat-header flex">
                     <h3 class="stat-title">Strength</h3>
-                    <button id="strengthBtn" class="stat-roll">Roll</button>
+                    <button id="strBtn" class="stat-roll">Roll</button>
                 </div>
-                <ul id="strList" class="rolls">
+                <ul class="rolls" id="strList">
                     <li class="strRoll">Roll 1: </li>
                     <li class="strRoll">Roll 2: </li>
                     <li class="strRoll">Roll 3: </li>
                     <li class="strRoll">Roll 4: </li>
                 </ul>
-                <p class="roll-total">Total: </p>
+                <h4 class="roll-total" id="strTotal">Total: </h4>
             </div>
-            <div class="stat">
-                <h3 class="stat-title">Dexterity</h3>
-                <ul class="rolls">
-                    <li>Roll 1</li>
-                    <li>Roll 2</li>
-                    <li>Roll 3</li>
-                    <li>Roll 4</li>
+
+            <!-- dexterity -->
+            <div class="stat" id="stat-dex">
+                <div class="stat-header flex">
+                    <h3 class="stat-title">Dexterity</h3>
+                    <button class="stat-roll" id="dexBtn">Roll</button>
+                </div>
+                <ul class="rolls" id="dexList">
+                    <li class="dexRoll">Roll 1: </li>
+                    <li class="dexRoll">Roll 2: </li>
+                    <li class="dexRoll">Roll 3: </li>
+                    <li class="dexRoll">Roll 4: </li>
                 </ul>
-                <p class="roll-total">Total: </p>
+                <h4 class="roll-total" id="dexTotal">Total: </h4>
             </div>
-            <div class="stat">
-                <h3 class="stat-title">Constitution</h3>
-                <ul class="rolls">
-                    <li>Roll 1</li>
-                    <li>Roll 2</li>
-                    <li>Roll 3</li>
-                    <li>Roll 4</li>
+
+            <!-- constitution -->
+            <div class="stat" id="stat-con">
+                <div class="stat-header flex">
+                    <h3 class="stat-title">Constitution</h3>
+                    <button class="stat-roll" id="conBtn">Roll</button>
+                </div>
+                <ul class="rolls" id="conList">
+                    <li class="conRoll">Roll 1: </li>
+                    <li class="conRoll">Roll 2: </li>
+                    <li class="conRoll">Roll 3: </li>
+                    <li class="conRoll">Roll 4: </li>
                 </ul>
-                <p class="roll-total">Total: </p>
+                <h4 class="roll-total" id="conTotal">Total: </h4>
             </div>
-            <div class="stat">
-                <h3 class="stat-title">Intelligence</h3>
-                <ul class="rolls">
-                    <li>Roll 1</li>
-                    <li>Roll 2</li>
-                    <li>Roll 3</li>
-                    <li>Roll 4</li>
+
+            <!-- intelligence -->
+            <div class="stat" id="stat-int">
+                <div class="stat-header flex">
+                    <h3 class="stat-title">Intelligence</h3>
+                    <button class="stat-roll" id="intBtn">Roll</button>
+                </div>
+                <ul class="rolls" id="intList">
+                    <li class="intRoll">Roll 1: </li>
+                    <li class="intRoll">Roll 2: </li>
+                    <li class="intRoll">Roll 3: </li>
+                    <li class="intRoll">Roll 4: </li>
                 </ul>
-                <p class="roll-total">Total: </p>
+                <h4 class="roll-total" id="intTotal">Total: </h4>
             </div>
-            <div class="stat">
-                <h3 class="stat-title">Wisdom</h3>
-                <ul class="rolls">
-                    <li>Roll 1</li>
-                    <li>Roll 2</li>
-                    <li>Roll 3</li>
-                    <li>Roll 4</li>
+
+            <!-- wisdom -->
+            <div class="stat" id="stat-wis">
+                <div class="stat-header flex">
+                    <h3 class="stat-title">Wisdom</h3>
+                    <button class="stat-roll" id="wisBtn">Roll</button>
+                </div>
+                <ul class="rolls" id="wisList">
+                    <li class="wisRoll">Roll 1: </li>
+                    <li class="wisRoll">Roll 2: </li>
+                    <li class="wisRoll">Roll 3: </li>
+                    <li class="wisRoll">Roll 4: </li>
                 </ul>
-                <p class="roll-total">Total: </p>
+                <h4 class="roll-total" id="wisTotal">Total: </h4>
             </div>
-            <div class="stat">
-                <h3 class="stat-title">Charisma</h3>
-                <ul class="rolls">
-                    <li>Roll 1</li>
-                    <li>Roll 2</li>
-                    <li>Roll 3</li>
-                    <li>Roll 4</li>
+
+            <!-- charisma -->
+            <div class="stat" id="stat-char">
+                <div class="stat-header flex">
+                    <h3 class="stat-title">Charisma</h3>
+                    <button class="stat-roll" id="charBtn">Roll</button>
+                </div>
+                <ul class="rolls" id="charList">
+                    <li class="charRoll">Roll 1: </li>
+                    <li class="charRoll">Roll 2: </li>
+                    <li class="charRoll">Roll 3: </li>
+                    <li class="charRoll">Roll 4: </li>
                 </ul>
-                <p class="roll-total">Total: </p>
+                <h4 class="roll-total" id="charTotal">Total: </h4>
             </div>
         </div>
     </div>

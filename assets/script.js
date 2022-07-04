@@ -1,10 +1,9 @@
 const rollBtn = document.querySelector('#roll')
 const strRolls = document.querySelectorAll('.strRoll')
-const strBtn = document.querySelector('#strengthBtn')
+const strBtn = document.querySelector('#strBtn')
 
 const rollDice = () => {
     return Math.ceil(Math.random() * 6)
-    // console.log(Math.ceil(Math.random() * 6))
 }
 
 rollBtn.addEventListener('click', rollDice)
