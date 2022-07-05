@@ -81,6 +81,7 @@ body {
 /**********/
 /* layout */
 /**********/
+
 #stats {
   border: 2px grey solid;
   flex-wrap: wrap;
@@ -108,6 +109,11 @@ body {
   padding: 0.25rem;
   border-radius: 0.5rem;
   margin-left: 0.5rem;
+}
+
+.stat-roll:disabled {
+  color: lightgray;
+  border: 1px solid lightgray;
 }
 
 .stat-header {
