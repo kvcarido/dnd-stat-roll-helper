@@ -13,13 +13,18 @@
             <h1>Stat Roll Helper</h1>
             <div id="description" class="flow-content">
                 <p>
-                    Okay so, the crazy thing is I don't even play DnD. However, a lot of my close friends and family do play, and every once in a while I'll be interested enough to spectate a campaign session.
+                    This side project serves as a personal quest for learning in public, a fun and productive way to apply my knowledge of front-end technologies into a tool that can be useful for DnD enthusiasts who can't be bothered with the repetitious act of rolling for stats. Unless you're into that process, then don't let me stop you!
                 </p>
                 <p>
-                    Although I barely know anything about the world of DnD, I do know that at the beginning of a campaign you must roll a 6-sided die 🎲 to determine certain attributes for your character. This side project serves as a personal quest for learning in public, a fun and productive way to apply my knowledge of front-end technologies into a tool that can be useful for DnD enthusiasts who can't be bothered with the repetitious act of rolling for stats. Unless you're into that process, then don't let me stop you!
+                    There are many ways to calculate your character's abilities, but for the sake of simplicity I'll be following this method:
                 </p>
+                <ul>
+                    <li>Roll a 6-sided die, four times</li>
+                    <li>The lowest roll will be dropped</li>
+                    <li>The sum of the highest three rolls will be the value for that attribute</li>
+                </ul>
             </div>
-            <button id="roll">Roll All Stats</button>
+            <button id="roll-all-stats">Roll All Stats</button>
         </header>
 
         <div id="stats" class="flex flow-content">

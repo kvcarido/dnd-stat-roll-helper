@@ -14,36 +14,18 @@ const intRolls = document.querySelectorAll('.intRoll')
 const wisRolls = document.querySelectorAll('.wisRoll')
 const charRolls = document.querySelectorAll('.charRoll')
 
-class StatRollHelper {
-    constructor() {
-        this.attributeNames = [
-            'str',
-            'dex',
-            'con',
-            'int',
-            'wis',
-            'char'
-        ]
-    }
+let attributeNames = [
+    'str',
+    'dex',
+    'con',
+    'int',
+    'wis',
+    'char'
+]
 
-    rollDice() {
-        return Math.ceil(Math.random() * 6)
-    }
-
-    rollAttribute(attribute) {
-        let rolls = Array.from(`${attribute}Rolls`)
-        rolls.forEach((li, i) => {
-            li.append(this.rollDice)
-        })
-        `${attribute}Btn`.setAttribute('disabled', '')
-    }
+const rollDice = () => {
+    return roll = Math.ceil(Math.random() * 6)
 }
-
-/********************************/
-/* ********* INITIATE ********* */
-let newRoll = new StatRollHelper()
-/********************************/
-
 
 const rollStrength = () => {
     let rolls = Array.from(strRolls)
@@ -61,5 +43,41 @@ const rollDexterity = () => {
     dexBtn.setAttribute('disabled', '')
 }
 
+const rollConstitution = () => {
+    let rolls = Array.from(conRolls)
+    rolls.forEach((el, i) => {
+        el.append(rollDice())
+    })
+    conBtn.setAttribute('disabled', '')
+}
+
+const rollIntelligence = () => {
+    let rolls = Array.from(intRolls)
+    rolls.forEach((el, i) => {
+        el.append(rollDice())
+    })
+    intBtn.setAttribute('disabled', '')
+}
+
+const rollWisdom = () => {
+    let rolls = Array.from(wisRolls)
+    rolls.forEach((el, i) => {
+        el.append(rollDice())
+    })
+    wisBtn.setAttribute('disabled', '')
+}
+
+const rollCharisma = () => {
+    let rolls = Array.from(charRolls)
+    rolls.forEach((el, i) => {
+        el.append(rollDice())
+    })
+    charBtn.setAttribute('disabled', '')
+}
+
 strBtn.addEventListener('click', rollStrength)
 dexBtn.addEventListener('click', rollDexterity)
+conBtn.addEventListener('click', rollConstitution)
+intBtn.addEventListener('click', rollIntelligence)
+wisBtn.addEventListener('click', rollWisdom)
+charBtn.addEventListener('click', rollCharisma)

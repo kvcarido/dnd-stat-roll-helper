@@ -20,15 +20,16 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Apply CSS reset
 - [x] Utilize flexbox to make working with data a decent experience
 - [x] Disable button once clicked
+- [ ] Style (dropped) lowest roll value
 
 #### Functionality
 - [x] Create 6-sided dice roll
 - [x] Select attribute buttons in the DOM
 - [x] Select all attribute lists in the DOM
-- [ ] Add event listeners to all `stat-roll` buttons
-	- [ ] Add roll functionality for each attribute
-- [ ] Work on edge cases for `diceRoll()`
-	- If you roll a 1, reroll again
-	- If you roll 1 again, drop the roll
+- [x] Add event listeners to all `stat-roll` buttons
+	- [x] Add roll functionality for each attribute
 - [ ] Work on `roll-total`
+	- Drop lowest roll value
+	- Add remaining 3 values for total
+- [ ] Add functionality for `roll-all-stats` button
 - [ ] Refactor all functionality using OOP
