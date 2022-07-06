@@ -11,7 +11,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 > Work in progress...
 
 ### Resources
-> Work in progress...
+- [The DND 5E Guide: How to Roll Stats](https://5eguide.com/how-to-roll-stats-in-dd-5e)
 
 ## 🚧 Roadmap
 
