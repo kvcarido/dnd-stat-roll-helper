@@ -20,7 +20,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Apply CSS reset
 - [x] Utilize flexbox to make working with data a decent experience
 - [x] Disable button once clicked
-- [ ] Style (dropped) lowest roll value
+- [x] Set styles for `.dropped-roll`
 
 #### Functionality
 - [x] Create 6-sided dice roll
@@ -31,5 +31,10 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Work on `roll-total`
 	- Drop lowest roll value
 	- Add remaining 3 values for total
+- [ ] Find the lowest roll in the DOM
+	- [ ] use `indexToDrop` to target `li`
+- [ ] Update the DOM to show `roll-total` 
+	- target `#attrTotal`
+	- append `total`
 - [ ] Add functionality for `roll-all-stats` button
 - [ ] Refactor all functionality using OOP
