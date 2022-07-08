@@ -82,9 +82,11 @@ body {
 /* layout */
 /**********/
 
+/* mobile first */
+
 #stats {
-  border: 2px grey solid;
-  padding: 1rem;
+  border: 2px black solid;
+  display: grid;
 }
 
 .stat {
@@ -103,19 +105,26 @@ body {
 }
 
 .stat-roll {
-  border: 1px solid grey;
-  padding: 0.25rem;
+  border: 2px solid black;
   border-radius: 0.5rem;
-  margin-left: 0.5rem;
+  padding: 0.25rem 1.25rem;
+  font-weight: 700;
 }
 
 .stat-roll:disabled {
+  border: 2px solid lightgray;
   color: lightgray;
-  border: 1px solid lightgray;
+  font-weight: 700;
 }
 
 .stat-header {
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.roll-total {
+  /* margin-top: 1rem; */
 }
 
 .dropped-roll {
