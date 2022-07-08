@@ -23,10 +23,12 @@ let attributeNames = [
     'char'
 ]
 
+/* ROLL FUNCTIONALITY */
 const rollDice = () => {
     return roll = Math.ceil(Math.random() * 6)
 }
 
+/* INDIVIDUAL ATTR ROLL FUNCTIONALITY */
 const rollStrength = () => {
     let rolls = Array.from(strRolls)
     rolls.forEach((el, i) => {
@@ -68,16 +70,51 @@ const rollWisdom = () => {
 }
 
 const rollCharisma = () => {
+    // roll for each round, disable btn
     let rolls = Array.from(charRolls)
-    rolls.forEach((el, i) => {
-        el.append(rollDice())
+    rolls.forEach((x, i) => {
+        x.append(rollDice())
     })
     charBtn.setAttribute('disabled', '')
+    
+    // ** add to all attr **
+    // calculate total, drops lowest roll
+    let arr = totalRoll(rolls)
+    let indexToDrop = dropLowest(arr)
+
+    // new array with lowest roll dropped    
+    let subtotal = arr.splice(indexToDrop, 1)
+    // console.log(arr)
+
+    // add total, update the DOM
+    let total = attrRollTotal(arr)
+    console.log(total)
 }
 
+/* ATTR BUTTON CLICK EVENT LISTENER */
 strBtn.addEventListener('click', rollStrength)
 dexBtn.addEventListener('click', rollDexterity)
 conBtn.addEventListener('click', rollConstitution)
 intBtn.addEventListener('click', rollIntelligence)
 wisBtn.addEventListener('click', rollWisdom)
 charBtn.addEventListener('click', rollCharisma)
+
+/* ATTR ROLL TOTAL FUNCTIONALITY */
+const totalRoll = (rolls) => {
+    let rollResult = []
+    rolls.forEach((x, i) => {
+        rollResult.push(Number(rolls[i].lastChild.data))
+    })
+    return rollResult
+}
+
+/* DROP THE LOWEST ROLL */
+const dropLowest = (rollResult) => {
+    let lowest = Math.min(...rollResult)
+    return rollResult.indexOf(lowest)
+}
+
+/* ADD REMAINING 3 ROLLS */
+const attrRollTotal = (arr) => {
+    return arr.reduce((a, b) => a + b, 0)
+}
