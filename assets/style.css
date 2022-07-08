@@ -70,7 +70,7 @@ body {
 
 .container {
   padding: 0 var(--spacer);
-  max-width: 45rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -84,8 +84,6 @@ body {
 
 #stats {
   border: 2px grey solid;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 1rem;
 }
 
