@@ -82,8 +82,6 @@ body {
 /* layout */
 /**********/
 
-/* mobile first */
-
 #stats {
   border: 2px black solid;
   display: grid;
@@ -121,10 +119,6 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 1rem;
-}
-
-.roll-total {
-  /* margin-top: 1rem; */
 }
 
 .dropped-roll {
