@@ -97,6 +97,15 @@ html {
 }
 
 .dropped-roll {
-  color: maroon;
+  color: #E76E56;
   text-decoration: line-through;
+}
+
+.roll-total {
+  color: grey;
+  margin-left: 1rem;
+}
+
+.roll-total-green {
+  color: #4AA52E;
 }

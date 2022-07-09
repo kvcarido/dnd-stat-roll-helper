@@ -79,6 +79,7 @@ const rollStrength = () => {
     // add total, update the DOM
     let total = attrRollTotal(arr)
     strTotal.append(total)
+    strTotal.classList.add('roll-total-green')
 }
 
 const rollDexterity = () => {
@@ -104,6 +105,7 @@ const rollDexterity = () => {
     // add total, update the DOM
     let total = attrRollTotal(arr)
     dexTotal.append(total)
+    dexTotal.classList.add('roll-total-green')
 }
 
 const rollConstitution = () => {
@@ -129,6 +131,7 @@ const rollConstitution = () => {
     // add total, update the DOM
     let total = attrRollTotal(arr)
     conTotal.append(total)
+    conTotal.classList.add('roll-total-green')
 }
 
 const rollIntelligence = () => {
@@ -154,6 +157,7 @@ const rollIntelligence = () => {
     // add total, update the DOM
     let total = attrRollTotal(arr)
     intTotal.append(total)
+    intTotal.classList.add('roll-total-green')
 }
 
 const rollWisdom = () => {
@@ -179,6 +183,7 @@ const rollWisdom = () => {
     // add total, update the DOM
     let total = attrRollTotal(arr)
     wisTotal.append(total)
+    wisTotal.classList.add('roll-total-green')
 }
 
 const rollCharisma = () => {
@@ -190,9 +195,6 @@ const rollCharisma = () => {
     charBtn.setAttribute('disabled', '')
     charBtn.classList.remove('is-error')
     charBtn.classList.add('is-disabled')
-    
-    /*******************/
-    /* ADD TO ALL ATTR */
 
     // calculate total, drops lowest roll
     let arr = totalRoll(rolls)
@@ -208,8 +210,7 @@ const rollCharisma = () => {
     // add total, update the DOM
     let total = attrRollTotal(arr)
     charTotal.append(total)
-
-    /*******************/
+    charTotal.classList.add('roll-total-green')
 }
 
 /* ATTR BUTTON CLICK EVENT LISTENER */
