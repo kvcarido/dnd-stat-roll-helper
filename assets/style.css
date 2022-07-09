@@ -25,7 +25,7 @@ p,
 fieldset {
   margin: 0;
   padding: 0;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 ol[class],
@@ -41,7 +41,6 @@ img {
   height: auto;
 }
 
-button,
 input {
   font-family: inherit;
   font-size: inherit;
@@ -53,10 +52,10 @@ input {
 
 html {
     font-size: 100%;
-}
-
-body {
-    font-family: sans-serif;
+  }
+  
+  body {
+  font-family: 'Press Start 2P', cursive;
   line-height: 1.5;
 }
 
@@ -83,40 +82,16 @@ body {
 /**********/
 
 #stats {
-  border: 2px black solid;
+  border: 2px black dashed;
   display: grid;
-}
-
-.stat {
-  border: 1px grey dashed;
-  min-width: 20rem;
-  padding: 0.5rem;
 }
 
 /**********/
 /* styles */
 /**********/
 
-#roll-all-stats {
-  border: 1px solid black;
-  padding: 0.5rem;
-}
-
-.stat-roll {
-  border: 2px solid black;
-  border-radius: 0.5rem;
-  padding: 0.25rem 1.25rem;
-  font-weight: 700;
-}
-
-.stat-roll:disabled {
-  border: 2px solid lightgray;
-  color: lightgray;
-  font-weight: 700;
-}
-
 .stat-header {
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
 }

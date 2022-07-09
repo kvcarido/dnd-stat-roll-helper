@@ -62,6 +62,8 @@ const rollStrength = () => {
         el.append(rollDice())
     })
     strBtn.setAttribute('disabled', '')
+    strBtn.classList.remove('is-error')
+    strBtn.classList.add('is-disabled')
 
     // calculate total, drops lowest roll
     let arr = totalRoll(rolls)
@@ -85,6 +87,8 @@ const rollDexterity = () => {
         el.append(rollDice())
     })
     dexBtn.setAttribute('disabled', '')
+    dexBtn.classList.remove('is-error')
+    dexBtn.classList.add('is-disabled')
 
     // calculate total, drops lowest roll
     let arr = totalRoll(rolls)
@@ -108,6 +112,8 @@ const rollConstitution = () => {
         el.append(rollDice())
     })
     conBtn.setAttribute('disabled', '')
+    conBtn.classList.remove('is-error')
+    conBtn.classList.add('is-disabled')
 
     // calculate total, drops lowest roll
     let arr = totalRoll(rolls)
@@ -131,6 +137,8 @@ const rollIntelligence = () => {
         el.append(rollDice())
     })
     intBtn.setAttribute('disabled', '')
+    intBtn.classList.remove('is-error')
+    intBtn.classList.add('is-disabled')
 
     // calculate total, drops lowest roll
     let arr = totalRoll(rolls)
@@ -154,6 +162,8 @@ const rollWisdom = () => {
         el.append(rollDice())
     })
     wisBtn.setAttribute('disabled', '')
+    wisBtn.classList.remove('is-error')
+    wisBtn.classList.add('is-disabled')
     
     // calculate total, drops lowest roll
     let arr = totalRoll(rolls)
@@ -178,6 +188,8 @@ const rollCharisma = () => {
         x.append(rollDice())
     })
     charBtn.setAttribute('disabled', '')
+    charBtn.classList.remove('is-error')
+    charBtn.classList.add('is-disabled')
     
     /*******************/
     /* ADD TO ALL ATTR */

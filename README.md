@@ -12,6 +12,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 
 ### Resources
 - [The DND 5E Guide: How to Roll Stats](https://5eguide.com/how-to-roll-stats-in-dd-5e)
+- [NES.css](https://github.com/nostalgic-css/NES.css)
 
 ## 🚧 Roadmap
 
@@ -21,9 +22,10 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Utilize flexbox to make working with data a decent experience
 - [x] Disable button once clicked
 - [x] Set styles for `.dropped-roll`
-- [ ] Create style guide 
-	- [ ] Decide on theme color
-	- [ ] Find better font, sprites / icons for each `attr`
+~~- [ ] Create style guide~~
+	~~- [ ] Decide on theme color~~
+	~~- [ ] Find better font, sprites / icons for each `attr`~~
+- [x] decide on NES.css to make life easier
 - [ ] Refactor layout to be mobile-first
 
 
