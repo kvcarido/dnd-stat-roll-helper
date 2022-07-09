@@ -22,10 +22,8 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Utilize flexbox to make working with data a decent experience
 - [x] Disable button once clicked
 - [x] Set styles for `.dropped-roll`
-~~- [ ] Create style guide~~
-	~~- [ ] Decide on theme color~~
-	~~- [ ] Find better font, sprites / icons for each `attr`~~
-- [x] decide on NES.css to make life easier
+- [ ] Create style guide
+	- [x] decide on NES.css to make life easier
 - [ ] Refactor layout to be mobile-first
 
 
