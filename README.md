@@ -44,4 +44,5 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Update the DOM to show `roll-total` 
 	- target `#attrTotal`
 	- append `total`
+- [ ] Create reset button
 - [ ] Refactor all functionality using OOP
