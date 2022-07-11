@@ -81,14 +81,43 @@ html {
 /* layout */
 /**********/
 
+/* MOBILE */
+@media (max-width: 430px) {
+  .stat {
+    max-width: 100%;
+  }
+}
+
+/* TABLET */
+@media (max-width: 815px)  {
+  h1 {
+    text-align: center;
+  }
+}
+
+header {
+  margin-top: 3rem;
+}
+
 #stats {
-  border: 2px black dashed;
-  display: grid;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.stat {
+  min-width: 22rem;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 /**********/
 /* styles */
 /**********/
+
 
 .stat-header {
   align-items: center;

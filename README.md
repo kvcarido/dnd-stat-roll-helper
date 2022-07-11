@@ -24,7 +24,10 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Set styles for `.dropped-roll`
 - [ ] Create style guide
 	- [x] decide on NES.css to make life easier
-- [ ] Refactor layout to be mobile-first
+- [x] Refactor layout to be mobile-first
+- [ ] Create footer
+	- Add copyright
+	- Add links: Github, Twitter
 
 
 ### Functionality
@@ -41,5 +44,4 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Update the DOM to show `roll-total` 
 	- target `#attrTotal`
 	- append `total`
-- [ ] Add functionality for `roll-all-stats` button
 - [ ] Refactor all functionality using OOP
