@@ -25,7 +25,7 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [ ] Create style guide
 	- [x] decide on NES.css to make life easier
 - [x] Refactor layout to be mobile-first
-- [ ] Create footer
+- [x] Create credentials
 	- Add copyright
 	- Add links: Github, Twitter
 

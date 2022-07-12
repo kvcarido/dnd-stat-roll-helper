@@ -95,6 +95,11 @@ html {
   }
 }
 
+nav {
+  text-align: right;
+  padding: 1rem;
+}
+
 header {
   margin-top: 3rem;
 }
@@ -114,10 +119,13 @@ header {
   padding: 0.5rem;
 }
 
+footer {
+  text-align: center;
+}
+
 /**********/
 /* styles */
 /**********/
-
 
 .stat-header {
   align-items: center;
