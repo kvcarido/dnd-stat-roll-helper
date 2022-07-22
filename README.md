@@ -28,9 +28,11 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Create credentials
 	- Add copyright
 	- Add links: Github, Twitter
+- [ ] Figure out why _Strength_ attribute has extra padding under Total on tablet/desktop view 😵‍💫
 
 
 ### Functionality
+#### v1
 - [x] Create 6-sided dice roll
 - [x] Select attribute buttons in the DOM
 - [x] Select all attribute lists in the DOM
@@ -44,5 +46,8 @@ Although I barely know anything about the world of DnD, I do know that at the be
 - [x] Update the DOM to show `roll-total` 
 	- target `#attrTotal`
 	- append `total`
+
+#### v2 – started 7/22
 - [ ] Create reset button
-- [ ] Refactor all functionality using OOP
+- [x] Create a new branch `make-oop`
+	- [ ] Start working on refactoring functionality
